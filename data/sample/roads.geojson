@@ -1,0 +1,12 @@
+﻿{"type":"FeatureCollection","name":"sample_roads","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[
+{"type":"Feature","properties":{"road_id":"R01","highway":"residential","source":"sample ilustratif; bukan OSM"},"geometry":{"type":"LineString","coordinates":[[102.255,-3.809],[102.277,-3.809]]}},
+{"type":"Feature","properties":{"road_id":"R02","highway":"residential","source":"sample ilustratif; bukan OSM"},"geometry":{"type":"LineString","coordinates":[[102.255,-3.805],[102.277,-3.805]]}},
+{"type":"Feature","properties":{"road_id":"R03","highway":"residential","source":"sample ilustratif; bukan OSM"},"geometry":{"type":"LineString","coordinates":[[102.255,-3.801],[102.277,-3.801]]}},
+{"type":"Feature","properties":{"road_id":"R04","highway":"residential","source":"sample ilustratif; bukan OSM"},"geometry":{"type":"LineString","coordinates":[[102.255,-3.797],[102.277,-3.797]]}},
+{"type":"Feature","properties":{"road_id":"R05","highway":"residential","source":"sample ilustratif; bukan OSM"},"geometry":{"type":"LineString","coordinates":[[102.255,-3.794],[102.277,-3.794]]}},
+{"type":"Feature","properties":{"road_id":"R06","highway":"residential","source":"sample ilustratif; bukan OSM"},"geometry":{"type":"LineString","coordinates":[[102.257,-3.810],[102.257,-3.794]]}},
+{"type":"Feature","properties":{"road_id":"R07","highway":"residential","source":"sample ilustratif; bukan OSM"},"geometry":{"type":"LineString","coordinates":[[102.261,-3.810],[102.261,-3.794]]}},
+{"type":"Feature","properties":{"road_id":"R08","highway":"tertiary","source":"sample ilustratif; bukan OSM"},"geometry":{"type":"LineString","coordinates":[[102.265,-3.810],[102.265,-3.794]]}},
+{"type":"Feature","properties":{"road_id":"R09","highway":"residential","source":"sample ilustratif; bukan OSM"},"geometry":{"type":"LineString","coordinates":[[102.269,-3.810],[102.269,-3.794]]}},
+{"type":"Feature","properties":{"road_id":"R10","highway":"residential","source":"sample ilustratif; bukan OSM"},"geometry":{"type":"LineString","coordinates":[[102.273,-3.810],[102.273,-3.794]]}}
+]}

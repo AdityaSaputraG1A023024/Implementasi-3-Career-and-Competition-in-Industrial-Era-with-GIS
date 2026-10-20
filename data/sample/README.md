@@ -1,0 +1,1 @@
+﻿Data fixture ini dibuat untuk demonstrasi offline dan bukan hasil ekstraksi OpenStreetMap atau survei lapangan. Batas area mengikuti bounding box ilustratif di config.yaml; garis jalan berupa kisi sederhana dan empat titik pesaing hanya data contoh. Populasi dibangkitkan terpisah secara sintetis oleh program dengan seed tetap.

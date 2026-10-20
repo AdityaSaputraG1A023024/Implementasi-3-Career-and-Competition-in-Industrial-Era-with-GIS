@@ -1,0 +1,45 @@
+study_area:
+  name: "Kawasan pusat Kota Bengkulu (area ilustrasi)"
+  # Urutan batas: bujur barat, lintang selatan, bujur timur, lintang utara.
+  bbox_wgs84: [102.254, -3.811, 102.277, -3.793]
+  source: auto
+
+analysis:
+  service_radii_m: [500, 1000]
+  scoring_radius_m: 500
+  candidate_count: 40
+  candidate_grid_spacing_m: 180
+  max_candidate_distance_to_road_m: 250
+  population_grid_spacing_m: 220
+  random_seed: 20261020
+
+weights:
+  population: 0.45
+  accessibility: 0.35
+  competition_distance: 0.20
+
+# Alternatif bobot untuk uji sensitivitas; setiap baris harus berjumlah 1.
+sensitivity_weights:
+  - name: "lebih_beratkan_populasi"
+    population: 0.65
+    accessibility: 0.20
+    competition_distance: 0.15
+  - name: "lebih_beratkan_akses"
+    population: 0.25
+    accessibility: 0.55
+    competition_distance: 0.20
+  - name: "lebih_beratkan_pesaing"
+    population: 0.35
+    accessibility: 0.20
+    competition_distance: 0.45
+
+osm:
+  network_type: drive
+  competitor_tags:
+    shop: [supermarket, convenience, department_store]
+
+sample_data:
+  boundary: data/sample/study_area.geojson
+  roads: data/sample/roads.geojson
+  competitors: data/sample/competitors.geojson
+

@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_155602b9c5d8abaf9fb044ec782caf5f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_155602b9c5d8abaf9fb044ec782caf5f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_155602b9c5d8abaf9fb044ec782caf5f = L.map(
+                "map_155602b9c5d8abaf9fb044ec782caf5f",
+                {
+                    center: [-3.8020000000000014, 102.26549999999999],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+        function geo_json_630aff1692a6d77df4d010dc9f796f6c_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#333333", "fillOpacity": 0.04};
+            }
+        }
+
+        function geo_json_630aff1692a6d77df4d010dc9f796f6c_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_630aff1692a6d77df4d010dc9f796f6c = L.geoJson(null, {
+                onEachFeature: geo_json_630aff1692a6d77df4d010dc9f796f6c_onEachFeature,
+            
+                style: geo_json_630aff1692a6d77df4d010dc9f796f6c_styler,
+            ...{
+}
+        });
+
+        function geo_json_630aff1692a6d77df4d010dc9f796f6c_add (data) {
+            geo_json_630aff1692a6d77df4d010dc9f796f6c
+                .addData(data);
+        }
+            geo_json_630aff1692a6d77df4d010dc9f796f6c_add({"bbox": [102.254, -3.8110000000000053, 102.277, -3.7929999999999935], "features": [{"bbox": [102.254, -3.8110000000000053, 102.277, -3.7929999999999935], "geometry": {"coordinates": [[[102.254, -3.8110000000000053], [102.277, -3.810999999999996], [102.277, -3.7929999999999935], [102.254, -3.7930000000000086], [102.254, -3.8110000000000053]]], "type": "Polygon"}, "id": "0", "properties": {"name": "Kawasan pusat Kota Bengkulu (area ilustrasi)", "source": "batas bbox ilustratif dari config.yaml; bukan batas administrasi resmi"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_630aff1692a6d77df4d010dc9f796f6c.addTo(map_155602b9c5d8abaf9fb044ec782caf5f);
+        
+    
+        function geo_json_3ef3dbedf6482a5eb0a8ce5832b77dc4_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#777777", "weight": 2};
+            }
+        }
+
+        function geo_json_3ef3dbedf6482a5eb0a8ce5832b77dc4_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_3ef3dbedf6482a5eb0a8ce5832b77dc4 = L.geoJson(null, {
+                onEachFeature: geo_json_3ef3dbedf6482a5eb0a8ce5832b77dc4_onEachFeature,
+            
+                style: geo_json_3ef3dbedf6482a5eb0a8ce5832b77dc4_styler,
+            ...{
+}
+        });
+
+        function geo_json_3ef3dbedf6482a5eb0a8ce5832b77dc4_add (data) {
+            geo_json_3ef3dbedf6482a5eb0a8ce5832b77dc4
+                .addData(data);
+        }
+            geo_json_3ef3dbedf6482a5eb0a8ce5832b77dc4_add({"bbox": [102.255, -3.810000000000008, 102.277, -3.793999999999997], "features": [{"bbox": [102.255, -3.8090000000000024, 102.277, -3.809], "geometry": {"coordinates": [[102.255, -3.8090000000000024], [102.277, -3.809]], "type": "LineString"}, "id": "0", "properties": {"highway": "residential", "road_id": "R01", "source": "sample ilustratif; bukan OSM"}, "type": "Feature"}, {"bbox": [102.255, -3.805, 102.277, -3.804999999999996], "geometry": {"coordinates": [[102.255, -3.805], [102.277, -3.804999999999996]], "type": "LineString"}, "id": "1", "properties": {"highway": "residential", "road_id": "R02", "source": "sample ilustratif; bukan OSM"}, "type": "Feature"}, {"bbox": [102.255, -3.8010000000000077, 102.277, -3.8009999999999957], "geometry": {"coordinates": [[102.255, -3.8009999999999957], [102.277, -3.8010000000000077]], "type": "LineString"}, "id": "2", "properties": {"highway": "residential", "road_id": "R03", "source": "sample ilustratif; bukan OSM"}, "type": "Feature"}, {"bbox": [102.255, -3.7969999999999997, 102.277, -3.7969999999999957], "geometry": {"coordinates": [[102.255, -3.7969999999999997], [102.277, -3.7969999999999957]], "type": "LineString"}, "id": "3", "properties": {"highway": "residential", "road_id": "R04", "source": "sample ilustratif; bukan OSM"}, "type": "Feature"}, {"bbox": [102.255, -3.794000000000005, 102.277, -3.794000000000001], "geometry": {"coordinates": [[102.255, -3.794000000000001], [102.277, -3.794000000000005]], "type": "LineString"}, "id": "4", "properties": {"highway": "residential", "road_id": "R05", "source": "sample ilustratif; bukan OSM"}, "type": "Feature"}, {"bbox": [102.257, -3.809999999999997, 102.257, -3.793999999999997], "geometry": {"coordinates": [[102.257, -3.809999999999997], [102.257, -3.793999999999997]], "type": "LineString"}, "id": "5", "properties": {"highway": "residential", "road_id": "R06", "source": "sample ilustratif; bukan OSM"}, "type": "Feature"}, {"bbox": [102.261, -3.809999999999997, 102.261, -3.7939999999999987], "geometry": {"coordinates": [[102.261, -3.809999999999997], [102.261, -3.7939999999999987]], "type": "LineString"}, "id": "6", "properties": {"highway": "residential", "road_id": "R07", "source": "sample ilustratif; bukan OSM"}, "type": "Feature"}, {"bbox": [102.265, -3.8099999999999974, 102.265, -3.7940000000000045], "geometry": {"coordinates": [[102.265, -3.8099999999999974], [102.265, -3.7940000000000045]], "type": "LineString"}, "id": "7", "properties": {"highway": "tertiary", "road_id": "R08", "source": "sample ilustratif; bukan OSM"}, "type": "Feature"}, {"bbox": [102.269, -3.810000000000008, 102.269, -3.7940000000000067], "geometry": {"coordinates": [[102.269, -3.810000000000008], [102.269, -3.7940000000000067]], "type": "LineString"}, "id": "8", "properties": {"highway": "residential", "road_id": "R09", "source": "sample ilustratif; bukan OSM"}, "type": "Feature"}, {"bbox": [102.273, -3.8100000000000063, 102.273, -3.7939999999999987], "geometry": {"coordinates": [[102.273, -3.8100000000000063], [102.273, -3.7939999999999987]], "type": "LineString"}, "id": "9", "properties": {"highway": "residential", "road_id": "R10", "source": "sample ilustratif; bukan OSM"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_3ef3dbedf6482a5eb0a8ce5832b77dc4.addTo(map_155602b9c5d8abaf9fb044ec782caf5f);
+        
+    
+            var marker_16c6c0a9da2bc789dc5edb8c46085dbf = L.marker(
+                [-3.8049999999999993, 102.259],
+                {
+}
+            ).addTo(map_155602b9c5d8abaf9fb044ec782caf5f);
+        
+    
+            var icon_6fe07299abf322a973b7cf817f316153 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_16c6c0a9da2bc789dc5edb8c46085dbf.bindTooltip(
+                `<div>
+                     Fasilitas sejenis contoh 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_16c6c0a9da2bc789dc5edb8c46085dbf.setIcon(icon_6fe07299abf322a973b7cf817f316153);
+            
+    
+            var marker_e6f4e5debed6bab9e3b73c9f0d907329 = L.marker(
+                [-3.801000000000007, 102.268],
+                {
+}
+            ).addTo(map_155602b9c5d8abaf9fb044ec782caf5f);
+        
+    
+            var icon_4b8dd430b207eae8f4c6d5795c5879ac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_e6f4e5debed6bab9e3b73c9f0d907329.bindTooltip(
+                `<div>
+                     Fasilitas sejenis contoh 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e6f4e5debed6bab9e3b73c9f0d907329.setIcon(icon_4b8dd430b207eae8f4c6d5795c5879ac);
+            
+    
+            var marker_b367cdd49db637caabb87a1f57b39305 = L.marker(
+                [-3.796999999999998, 102.273],
+                {
+}
+            ).addTo(map_155602b9c5d8abaf9fb044ec782caf5f);
+        
+    
+            var icon_2233adfa5c9293c3d6f210c931ab158c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_b367cdd49db637caabb87a1f57b39305.bindTooltip(
+                `<div>
+                     Fasilitas sejenis contoh 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b367cdd49db637caabb87a1f57b39305.setIcon(icon_2233adfa5c9293c3d6f210c931ab158c);
+            
+    
+            var marker_30ea3d99026a00b59cb0e1c673834c54 = L.marker(
+                [-3.7939999999999987, 102.261],
+                {
+}
+            ).addTo(map_155602b9c5d8abaf9fb044ec782caf5f);
+        
+    
+            var icon_b542193d60aa52018501a34b0a1b00a8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_30ea3d99026a00b59cb0e1c673834c54.bindTooltip(
+                `<div>
+                     Fasilitas sejenis contoh 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_30ea3d99026a00b59cb0e1c673834c54.setIcon(icon_b542193d60aa52018501a34b0a1b00a8);
+            
+    
+            var circle_marker_3e931f963ed6915866e47d1711a06f9a = L.circleMarker(
+                [-3.8101891284343417, 102.25475523924692],
+                {"bubblingMouseEvents": true, "color": "#2878b5", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2878b5", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_155602b9c5d8abaf9fb044ec782caf5f);
+        
+    
+        var popup_c0d0fbdf08d38dbeb502490ed87c6865 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_170a9e8005ed7f7726b11f9f2e0a0578 = $(`<div id="html_170a9e8005ed7f7726b11f9f2e0a0578" style="width: 100.0%; height: 100.0%;">K001 | Peringkat 38 | Skor 0.306 | Populasi buffer 4215</div>`)[0];
+                popup_c0d0fbdf08d38dbeb502490ed87c6865.setContent(html_170a9e8005ed7f7726b11f9f2e0a0578);
+            
+        
+
+        circle_marker_3e931f963ed6915866e47d1711a06f9a.bindPopup(popup_c0d0fbdf08d38dbeb502490ed87c6865)
+        ;
+
+        
+    
+    
+            var circle_marker_08211e814cf491e7045b0bf2c47381d7 = L.circleMarker(
+                [-3.8102046633991895, 102.25961315231898],
+                {"bubblingMouseEvents": true, "color": "#2878b5", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2878b5", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_155602b9c5d8abaf9fb044ec782caf5f);
+        
+    
+        var popup_8f43614f73cb33f03952b69872ea2fbe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_502f9186a382d8519242c461287bbbbc = $(`<div id="html_502f9186a382d8519242c461287bbbbc" style="width: 100.0%; height: 100.0%;">K002 | Peringkat 30 | Skor 0.433 | Populasi buffer 6967</div>`)[0];
+                popup_8f43614f73cb33f03952b69872ea2fbe.setContent(html_502f9186a382d8519242c461287bbbbc);
+            
+        
+
+        circle_marker_08211e814cf491e7045b0bf2c47381d7.bindPopup(popup_8f43614f73cb33f03952b69872ea2fbe)
+        ;
+
+        
+    
+    
+            var circle_marker_2b0b2629186044319eabb9b7a2769144 = L.circleMarker(
+                [-3.8102253340150285, 102.26609040075101],
+                {"bubblingMouseEvents": true, "color": "#2878b5", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2878b5", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_155602b9c5d8abaf9fb044ec782caf5f);
+        
+    
+        var popup_d15e9ac90cc4af48a68bf6ff2862f9f6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_589da9e4e4915731cc390f2eb7a3a903 = $(`<div id="html_589da9e4e4915731cc390f2eb7a3a903" style="width: 100.0%; height: 100.0%;">K003 | Peringkat 29 | Skor 0.435 | Populasi buffer 6246</div>`)[0];
+                popup_d15e9ac90cc4af48a68bf6ff2862f9f6.setContent(html_589da9e4e4915731cc390f2eb7a3a903);
+            
+        
+
+        circle_marker_2b0b2629186044319eabb9b7a2769144.bindPopup(popup_d15e9ac90cc4af48a68bf6ff2862f9f6)
+        ;
+
+        
+    
+    
+            var circle_marker_7cf6cac49b81672c7034cc6c74b011b6 = L.circleMarker(
+                [-3.810245955863229, 102.27256768453807],
+                {"bubblingMouseEvents": true, "color": "#2878b5", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2878b5", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_155602b9c5d8abaf9fb044ec782caf5f);
+        
+    
+        var popup_ab2a664d63ffa25a8634c43c1e455d94 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_68020add9c2f6b4f89dea0192e01d052 = $(`<div id="html_68020add9c2f6b4f89dea0192e01d052" style="width: 100.0%; height: 100.0%;">K004 | Peringkat 28 | Skor 0.474 | Populasi buffer 6251</div>`)[0];
+                popup_ab2a664d63ffa25a8634c43c1e455d94.setContent(html_68020add9c2f6b4f89dea0192e01d052);
+            
+        
+
+        circle_marker_7cf6cac49b81672c7034cc6c74b011b6.bindPopup(popup_ab2a664d63ffa25a8634c43c1e455d94)
+        ;
+
+        
+    
+    
+            var circle_marker_70ec2e82ebadf374ac47cb42f456b55d = L.circleMarker(
+                [-3.808567744647259, 102.25637969699834],
+                {"bubblingMouseEvents": true, "color": "#2878b5", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2878b5", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_155602b9c5d8abaf9fb044ec782caf5f);
+        
+    
+        var popup_5781e9fca1460cd04c3aa6e97964a5d6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7914cc65583d74b236d304e8853c73bc = $(`<div id="html_7914cc65583d74b236d304e8853c73bc" style="width: 100.0%; height: 100.0%;">K005 | Peringkat 26 | Skor 0.488 | Populasi buffer 6144</div>`)[0];
+                popup_5781e9fca1460cd04c3aa6e97964a5d6.setContent(html_7914cc65583d74b236d304e8853c73bc);
+            
+        
+
+        circle_marker_70ec2e82ebadf374ac47cb42f456b55d.bindPopup(popup_5781e9fca1460cd04c3aa6e97964a5d6)
+        ;
+
+        
+    
+    
+            var circle_marker_ef51d1ea8bc1bdd90227747e3d33c504 = L.circleMarker(
+                [-3.8085884307867235, 102.26285691558712],
+                {"bubblingMouseEvents": true, "color": "#2878b5", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2878b5", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_155602b9c5d8abaf9fb044ec782caf5f);
+        
+    
+        var popup_200e0ce16b04f6e3bc04d92f887b697d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3e347caf3ecc1e3fdeb5554fddaa0507 = $(`<div id="html_3e347caf3ecc1e3fdeb5554fddaa0507" style="width: 100.0%; height: 100.0%;">K006 | Peringkat 24 | Skor 0.508 | Populasi buffer 9195</div>`)[0];
+                popup_200e0ce16b04f6e3bc04d92f887b697d.setContent(html_3e347caf3ecc1e3fdeb5554fddaa0507);
+            
+        
+
+        circle_marker_ef51d1ea8bc1bdd90227747e3d33c504.bindPopup(popup_200e0ce16b04f6e3bc04d92f887b697d)
+        ;
+
+        
+    
+    
+            var circle_marker_9a0e47db1c632f955cbb424fd1f1c89b = L.circleMarker(
+                [-3.8086090681800853, 102.26933416957236],
+                {"bubblingMouseEvents": true, "color": "#2878b5", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2878b5", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_155602b9c5d8abaf9fb044ec782caf5f);
+        
+    
+        var popup_397110db07048efcfb11dfa4a2b50a09 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9d5aa05220fb937783d96a4f11b15270 = $(`<div id="html_9d5aa05220fb937783d96a4f11b15270" style="width: 100.0%; height: 100.0%;">K007 | Peringkat 25 | Skor 0.495 | Populasi buffer 7509</div>`)[0];
+                popup_397110db07048efcfb11dfa4a2b50a09.setContent(html_9d5aa05220fb937783d96a4f11b15270);
+            
+        
+
+        circle_marker_9a0e47db1c632f955cbb424fd1f1c89b.bindPopup(popup_397110db07048efcfb11dfa4a2b50a09)
+        ;
+
+        
+    
+    
+            var circle_marker_016a86dbf80a07d33b82d64a01de4d88 = L.circleMarker(
+                [-3.8086296568260285, 102.27581145887056],
+                {"bubblingMouseEvents": true, "color": "#2878b5", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2878b5", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_155602b9c5d8abaf9fb044ec782caf5f);
+        
+    
+        var popup_88b2836da7a5eb74c45dc774782f22af = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_78d5ca1aa4a9dccd0cde5d304917e588 = $(`<div id="html_78d5ca1aa4a9dccd0cde5d304917e588" style="width: 100.0%; height: 100.0%;">K008 | Peringkat 34 | Skor 0.339 | Populasi buffer 5587</div>`)[0];
+                popup_88b2836da7a5eb74c45dc774782f22af.setContent(html_78d5ca1aa4a9dccd0cde5d304917e588);
+            
+        
+
+        circle_marker_016a86dbf80a07d33b82d64a01de4d88.bindPopup(popup_88b2836da7a5eb74c45dc774782f22af)
+        ;
+
+        
+    
+    
+            var circle_marker_ff89a7eb3b49b539f843c031818b60a0 = L.circleMarker(
+                [-3.80695152415274, 102.25962344919203],
+                {"bubblingMouseEvents": true, "color": "#2878b5", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2878b5", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_155602b9c5d8abaf9fb044ec782caf5f);
+        
+    
+        var popup_fc68aacd0632a47e40b9defcbb396796 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_510f5cb4c6c27efa1ab685b826c7adbe = $(`<div id="html_510f5cb4c6c27efa1ab685b826c7adbe" style="width: 100.0%; height: 100.0%;">K009 | Peringkat 18 | Skor 0.572 | Populasi buffer 11159</div>`)[0];
+                popup_fc68aacd0632a47e40b9defcbb396796.setContent(html_510f5cb4c6c27efa1ab685b826c7adbe);
+            
+        
+
+        circle_marker_ff89a7eb3b49b539f843c031818b60a0.bindPopup(popup_fc68aacd0632a47e40b9defcbb396796)
+        ;
+
+        
+    
+    
+            var circle_marker_a8bd608606518172b8ce9e190136c835 = L.circleMarker(
+                [-3.8069721770700884, 102.26610067336014],
+                {"bubblingMouseEvents": true, "color": "#2878b5", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2878b5", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_155602b9c5d8abaf9fb044ec782caf5f);
+        
+    
+        var popup_7d1e225f6a824c77584c8c295bd8aac6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4917b0474b1bdeab284ba32cf329d1e3 = $(`<div id="html_4917b0474b1bdeab284ba32cf329d1e3" style="width: 100.0%; height: 100.0%;">K010 | Peringkat 12 | Skor 0.626 | Populasi buffer 10336</div>`)[0];
+                popup_7d1e225f6a824c77584c8c295bd8aac6.setContent(html_4917b0474b1bdeab284ba32cf329d1e3);
+            
+        
+
+        circle_marker_a8bd608606518172b8ce9e190136c835.bindPopup(popup_7d1e225f6a824c77584c8c295bd8aac6)
+        ;
+
+        
+    
+    
+            var circle_marker_5680d878bebbe5fd77a581e73dd9de87 = L.circleMarker(
+                [-3.8069927812615525, 102.2725779328826],
+                {"bubblingMouseEvents": true, "color": "#2878b5", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2878b5", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_155602b9c5d8abaf9fb044ec782caf5f);
+        
+    
+        var popup_a4c37f26df13f57520b4ce364e711923 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5012b1ba32bdf6197a73398a5e3518cb = $(`<div id="html_5012b1ba32bdf6197a73398a5e3518cb" style="width: 100.0%; height: 100.0%;">K011 | Peringkat 11 | Skor 0.631 | Populasi buffer 10102</div>`)[0];
+                popup_a4c37f26df13f57520b4ce364e711923.setContent(html_5012b1ba32bdf6197a73398a5e3518cb);
+            
+        
+
+        circle_marker_5680d878bebbe5fd77a581e73dd9de87.bindPopup(popup_a4c37f26df13f57520b4ce364e711923)
+        ;
+
+        
+    
+    
+            var circle_marker_4a0429f63185ea48b49736e8f42d1bd3 = L.circleMarker(
+                [-3.805314614128883, 102.25639000156815],
+                {"bubblingMouseEvents": true, "color": "#2878b5", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2878b5", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_155602b9c5d8abaf9fb044ec782caf5f);
+        
+    
+        var popup_ed77b66f0507720d104058adb8bac55c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2f37ddc13be7b2adc5024e25343884c4 = $(`<div id="html_2f37ddc13be7b2adc5024e25343884c4" style="width: 100.0%; height: 100.0%;">K012 | Peringkat 22 | Skor 0.546 | Populasi buffer 8034</div>`)[0];
+                popup_ed77b66f0507720d104058adb8bac55c.setContent(html_2f37ddc13be7b2adc5024e25343884c4);
+            
+        
+
+        circle_marker_4a0429f63185ea48b49736e8f42d1bd3.bindPopup(popup_ed77b66f0507720d104058adb8bac55c)
+        ;
+
+        
+    
+    
+            var circle_marker_60824bd3debcdb8a35e694db1699a8ab = L.circleMarker(
+                [-3.805335282549043, 102.26286719590377],
+                {"bubblingMouseEvents": true, "color": "#2878b5", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2878b5", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_155602b9c5d8abaf9fb044ec782caf5f);
+        
+    
+        var popup_f58b3abbb199894d607f04060112b315 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_453991fa2b97a4ceb6474572ced17ff8 = $(`<div id="html_453991fa2b97a4ceb6474572ced17ff8" style="width: 100.0%; height: 100.0%;">K013 | Peringkat 9 | Skor 0.643 | Populasi buffer 10737</div>`)[0];
+                popup_f58b3abbb199894d607f04060112b315.setContent(html_453991fa2b97a4ceb6474572ced17ff8);
+            
+        
+
+        circle_marker_60824bd3debcdb8a35e694db1699a8ab.bindPopup(popup_f58b3abbb199894d607f04060112b315)
+        ;
+
+        
+    
+    
+            var circle_marker_8856332acb143ca594f3cda5e2e2bdef = L.circleMarker(
+                [-3.8053559022648558, 102.26934442563518],
+                {"bubblingMouseEvents": true, "color": "#2878b5", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2878b5", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_155602b9c5d8abaf9fb044ec782caf5f);
+        
+    
+        var popup_ba669090d6b1cdce5157c54adce43129 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_19d7a50845a3a81e79f091c69b1ab471 = $(`<div id="html_19d7a50845a3a81e79f091c69b1ab471" style="width: 100.0%; height: 100.0%;">K014 | Peringkat 19 | Skor 0.569 | Populasi buffer 9618</div>`)[0];
+                popup_ba669090d6b1cdce5157c54adce43129.setContent(html_19d7a50845a3a81e79f091c69b1ab471);
+            
+        
+
+        circle_marker_8856332acb143ca594f3cda5e2e2bdef.bindPopup(popup_ba669090d6b1cdce5157c54adce43129)
+        ;
+
+        
+    
+    
+            var circle_marker_20133602a6a4b34a790de7673790dd45 = L.circleMarker(
+                [-3.805371335088696, 102.274202371112],
+                {"bubblingMouseEvents": true, "color": "#2878b5", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2878b5", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_155602b9c5d8abaf9fb044ec782caf5f);
+        
+    
+        var popup_b6eec95c180a9ab41ca23a5bd9531405 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e6f9b37ed9545ba2236a7a8b09c6e733 = $(`<div id="html_e6f9b37ed9545ba2236a7a8b09c6e733" style="width: 100.0%; height: 100.0%;">K015 | Peringkat 16 | Skor 0.576 | Populasi buffer 9158</div>`)[0];
+                popup_b6eec95c180a9ab41ca23a5bd9531405.setContent(html_e6f9b37ed9545ba2236a7a8b09c6e733);
+            
+        
+
+        circle_marker_20133602a6a4b34a790de7673790dd45.bindPopup(popup_b6eec95c180a9ab41ca23a5bd9531405)
+        ;
+
+        
+    
+    
+            var circle_marker_2a9470ea99470fc0432b5871a6c2768c = L.circleMarker(
+                [-3.803693218221267, 102.25801444275818],
+                {"bubblingMouseEvents": true, "color": "#2878b5", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2878b5", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_155602b9c5d8abaf9fb044ec782caf5f);
+        
+    
+        var popup_93a7f131e29e00f93448569d6a2ee9ba = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aa0ad188547a7e2328ff477f4756e404 = $(`<div id="html_aa0ad188547a7e2328ff477f4756e404" style="width: 100.0%; height: 100.0%;">K016 | Peringkat 14 | Skor 0.582 | Populasi buffer 10932</div>`)[0];
+                popup_93a7f131e29e00f93448569d6a2ee9ba.setContent(html_aa0ad188547a7e2328ff477f4756e404);
+            
+        
+
+        circle_marker_2a9470ea99470fc0432b5871a6c2768c.bindPopup(popup_93a7f131e29e00f93448569d6a2ee9ba)
+        ;
+
+        
+    
+    
+            var circle_marker_89217968143f3a1013c62eaa9919e91c = L.circleMarker(
+                [-3.803713865611077, 102.26449163383175],
+                {"bubblingMouseEvents": true, "color": "#2878b5", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2878b5", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_155602b9c5d8abaf9fb044ec782caf5f);
+        
+    
+        var popup_11300916b6e786155ad9c146e36e1615 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_25394638ac7d96e08e57f56997aca06f = $(`<div id="html_25394638ac7d96e08e57f56997aca06f" style="width: 100.0%; height: 100.0%;">K017 | Peringkat 10 | Skor 0.636 | Populasi buffer 11120</div>`)[0];
+                popup_11300916b6e786155ad9c146e36e1615.setContent(html_25394638ac7d96e08e57f56997aca06f);
+            
+        
+
+        circle_marker_89217968143f3a1013c62eaa9919e91c.bindPopup(popup_11300916b6e786155ad9c146e36e1615)
+        ;
+
+        
+    
+    
+            var circle_marker_a6dd7f254dbfe0b688a34fa31218a593 = L.circleMarker(
+                [-3.803734464317089, 102.2709688602799],
+                {"bubblingMouseEvents": true, "color": "#16803c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#16803c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_155602b9c5d8abaf9fb044ec782caf5f);
+        
+    
+        var popup_7e808ed971b9418f40924d1ca98411e2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_55350673f59eedf976047bf3b031ff84 = $(`<div id="html_55350673f59eedf976047bf3b031ff84" style="width: 100.0%; height: 100.0%;">K018 | Peringkat 5 | Skor 0.674 | Populasi buffer 11560</div>`)[0];
+                popup_7e808ed971b9418f40924d1ca98411e2.setContent(html_55350673f59eedf976047bf3b031ff84);
+            
+        
+
+        circle_marker_a6dd7f254dbfe0b688a34fa31218a593.bindPopup(popup_7e808ed971b9418f40924d1ca98411e2)
+        ;
+
+        
+    
+    
+            var circle_3e43e8ce3ffb3c32bb1cf8552cc6d66f = L.circle(
+                [-3.803734464317089, 102.2709688602799],
+                {"bubblingMouseEvents": true, "color": "#16803c", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#16803c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 500, "stroke": true, "weight": 1}
+            ).addTo(map_155602b9c5d8abaf9fb044ec782caf5f);
+        
+    
+            var circle_marker_2e7a05d418fb294046e35dd191b13664 = L.circleMarker(
+                [-3.802056313058402, 102.2547810102826],
+                {"bubblingMouseEvents": true, "color": "#2878b5", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2878b5", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_155602b9c5d8abaf9fb044ec782caf5f);
+        
+    
+        var popup_a698c00a621f1883bf44d13a3583df94 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ace5d71814756b2b7d03091ed8ffa0c2 = $(`<div id="html_ace5d71814756b2b7d03091ed8ffa0c2" style="width: 100.0%; height: 100.0%;">K019 | Peringkat 33 | Skor 0.380 | Populasi buffer 6015</div>`)[0];
+                popup_a698c00a621f1883bf44d13a3583df94.setContent(html_ace5d71814756b2b7d03091ed8ffa0c2);
+            
+        
+
+        circle_marker_2e7a05d418fb294046e35dd191b13664.bindPopup(popup_a698c00a621f1883bf44d13a3583df94)
+        ;
+
+        
+    
+    
+            var circle_marker_a9f4fd879b23ed134b71032d710bcb0e = L.circleMarker(
+                [-3.802076975924827, 102.26125817152408],
+                {"bubblingMouseEvents": true, "color": "#2878b5", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2878b5", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_155602b9c5d8abaf9fb044ec782caf5f);
+        
+    
+        var popup_27a6758871921371503b465e74c74a4d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_413ffc9700d21c5e8485d7ab14373be8 = $(`<div id="html_413ffc9700d21c5e8485d7ab14373be8" style="width: 100.0%; height: 100.0%;">K020 | Peringkat 6 | Skor 0.668 | Populasi buffer 11570</div>`)[0];
+                popup_27a6758871921371503b465e74c74a4d.setContent(html_413ffc9700d21c5e8485d7ab14373be8);
+            
+        
+
+        circle_marker_a9f4fd879b23ed134b71032d710bcb0e.bindPopup(popup_27a6758871921371503b465e74c74a4d)
+        ;
+
+        
+    
+    
+            var circle_marker_c6bb122c9045ccd242a3750de675df36 = L.circleMarker(
+                [-3.80209759012899, 102.26773536818158],
+                {"bubblingMouseEvents": true, "color": "#2878b5", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2878b5", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_155602b9c5d8abaf9fb044ec782caf5f);
+        
+    
+        var popup_4810e5a16d628a1aabbc9adcd93c9c95 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f2c374aa71f17b3255fe618019f451ae = $(`<div id="html_f2c374aa71f17b3255fe618019f451ae" style="width: 100.0%; height: 100.0%;">K021 | Peringkat 21 | Skor 0.563 | Populasi buffer 10543</div>`)[0];
+                popup_4810e5a16d628a1aabbc9adcd93c9c95.setContent(html_f2c374aa71f17b3255fe618019f451ae);
+            
+        
+
+        circle_marker_c6bb122c9045ccd242a3750de675df36.bindPopup(popup_4810e5a16d628a1aabbc9adcd93c9c95)
+        ;
+
+        
+    
+    
+            var circle_marker_6bfb3a3bc67eb03cf889d060a7d530bc = L.circleMarker(
+                [-3.8021181556695702, 102.2742126001716],
+                {"bubblingMouseEvents": true, "color": "#2878b5", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2878b5", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_155602b9c5d8abaf9fb044ec782caf5f);
+        
+    
+        var popup_569ca81fbeb35be434bb41cbb2471bd0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4f5fef7571b741101af15b0c5b3bdd74 = $(`<div id="html_4f5fef7571b741101af15b0c5b3bdd74" style="width: 100.0%; height: 100.0%;">K022 | Peringkat 15 | Skor 0.581 | Populasi buffer 9883</div>`)[0];
+                popup_569ca81fbeb35be434bb41cbb2471bd0.setContent(html_4f5fef7571b741101af15b0c5b3bdd74);
+            
+        
+
+        circle_marker_6bfb3a3bc67eb03cf889d060a7d530bc.bindPopup(popup_569ca81fbeb35be434bb41cbb2471bd0)
+        ;
+
+        
+    
+    
+            var circle_marker_8fef6170b1a7ba1b9269025478d39510 = L.circleMarker(
+                [-3.8004400828590583, 102.25802472796792],
+                {"bubblingMouseEvents": true, "color": "#16803c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#16803c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_155602b9c5d8abaf9fb044ec782caf5f);
+        
+    
+        var popup_38b701a96b25e50dadfbbe454aee7847 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1c504cb86d7d0db21bc28843c6b45a71 = $(`<div id="html_1c504cb86d7d0db21bc28843c6b45a71" style="width: 100.0%; height: 100.0%;">K023 | Peringkat 1 | Skor 0.759 | Populasi buffer 10762</div>`)[0];
+                popup_38b701a96b25e50dadfbbe454aee7847.setContent(html_1c504cb86d7d0db21bc28843c6b45a71);
+            
+        
+
+        circle_marker_8fef6170b1a7ba1b9269025478d39510.bindPopup(popup_38b701a96b25e50dadfbbe454aee7847)
+        ;
+
+        
+    
+    
+            var circle_4ecf84f6bd89ab58d697fa4a721d8438 = L.circle(
+                [-3.8004400828590583, 102.25802472796792],
+                {"bubblingMouseEvents": true, "color": "#16803c", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#16803c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 500, "stroke": true, "weight": 1}
+            ).addTo(map_155602b9c5d8abaf9fb044ec782caf5f);
+        
+    
+            var circle_marker_0b376996243cf18758c33b0843ef4349 = L.circleMarker(
+                [-3.800460712540195, 102.26450189481946],
+                {"bubblingMouseEvents": true, "color": "#2878b5", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2878b5", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_155602b9c5d8abaf9fb044ec782caf5f);
+        
+    
+        var popup_43deae40c0bb047a83e85d710573fb38 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0915c421b8e3fd92d84f9918bb6ad195 = $(`<div id="html_0915c421b8e3fd92d84f9918bb6ad195" style="width: 100.0%; height: 100.0%;">K024 | Peringkat 8 | Skor 0.652 | Populasi buffer 11458</div>`)[0];
+                popup_43deae40c0bb047a83e85d710573fb38.setContent(html_0915c421b8e3fd92d84f9918bb6ad195);
+            
+        
+
+        circle_marker_0b376996243cf18758c33b0843ef4349.bindPopup(popup_43deae40c0bb047a83e85d710573fb38)
+        ;
+
+        
+    
+    
+            var circle_marker_5696942daf1d659788b2a8be0e64bbfd = L.circleMarker(
+                [-3.8004812935792858, 102.27097909704493],
+                {"bubblingMouseEvents": true, "color": "#16803c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#16803c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_155602b9c5d8abaf9fb044ec782caf5f);
+        
+    
+        var popup_52e2cbfdc2cd87d734969e894e956e7c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4c2587e22645c07b473e59759140ac5d = $(`<div id="html_4c2587e22645c07b473e59759140ac5d" style="width: 100.0%; height: 100.0%;">K025 | Peringkat 4 | Skor 0.675 | Populasi buffer 11763</div>`)[0];
+                popup_52e2cbfdc2cd87d734969e894e956e7c.setContent(html_4c2587e22645c07b473e59759140ac5d);
+            
+        
+
+        circle_marker_5696942daf1d659788b2a8be0e64bbfd.bindPopup(popup_52e2cbfdc2cd87d734969e894e956e7c)
+        ;
+
+        
+    
+    
+            var circle_093bbb58a2572bfcaecd9e9ead80d59b = L.circle(
+                [-3.8004812935792858, 102.27097909704493],
+                {"bubblingMouseEvents": true, "color": "#16803c", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#16803c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 500, "stroke": true, "weight": 1}
+            ).addTo(map_155602b9c5d8abaf9fb044ec782caf5f);
+        
+    
+            var circle_marker_76fbee617e0ad7694739ec50d747ae63 = L.circleMarker(
+                [-3.7988031864295757, 102.25479130316567],
+                {"bubblingMouseEvents": true, "color": "#2878b5", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2878b5", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_155602b9c5d8abaf9fb044ec782caf5f);
+        
+    
+        var popup_5cd8556331aff9fc00b2786383b6f68a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c1929c3e81a2f77c5d16f92d72263aa0 = $(`<div id="html_c1929c3e81a2f77c5d16f92d72263aa0" style="width: 100.0%; height: 100.0%;">K026 | Peringkat 35 | Skor 0.332 | Populasi buffer 6663</div>`)[0];
+                popup_5cd8556331aff9fc00b2786383b6f68a.setContent(html_c1929c3e81a2f77c5d16f92d72263aa0);
+            
+        
+
+        circle_marker_76fbee617e0ad7694739ec50d747ae63.bindPopup(popup_5cd8556331aff9fc00b2786383b6f68a)
+        ;
+
+        
+    
+    
+            var circle_marker_a59ddf6923914af965a37286df53d598 = L.circleMarker(
+                [-3.798823831566513, 102.2612684401959],
+                {"bubblingMouseEvents": true, "color": "#16803c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#16803c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_155602b9c5d8abaf9fb044ec782caf5f);
+        
+    
+        var popup_cafa37fc324aa14be9bb06b266bfd76f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_094a4545e991f4db1761ac1bdd096331 = $(`<div id="html_094a4545e991f4db1761ac1bdd096331" style="width: 100.0%; height: 100.0%;">K027 | Peringkat 2 | Skor 0.681 | Populasi buffer 11361</div>`)[0];
+                popup_cafa37fc324aa14be9bb06b266bfd76f.setContent(html_094a4545e991f4db1761ac1bdd096331);
+            
+        
+
+        circle_marker_a59ddf6923914af965a37286df53d598.bindPopup(popup_cafa37fc324aa14be9bb06b266bfd76f)
+        ;
+
+        
+    
+    
+            var circle_4036dbc5e0f84ee0fd63cf5756a40f2c = L.circle(
+                [-3.798823831566513, 102.2612684401959],
+                {"bubblingMouseEvents": true, "color": "#16803c", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#16803c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 500, "stroke": true, "weight": 1}
+            ).addTo(map_155602b9c5d8abaf9fb044ec782caf5f);
+        
+    
+            var circle_marker_bc2bd33767b292a5f312e44374941b7c = L.circleMarker(
+                [-3.798839283512078, 102.26612631621447],
+                {"bubblingMouseEvents": true, "color": "#2878b5", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2878b5", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_155602b9c5d8abaf9fb044ec782caf5f);
+        
+    
+        var popup_e0b6a0e0ff1525e5924190bfb30fe673 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fab92b25a61225fcb67fcb46b6f5b8d5 = $(`<div id="html_fab92b25a61225fcb67fcb46b6f5b8d5" style="width: 100.0%; height: 100.0%;">K028 | Peringkat 17 | Skor 0.573 | Populasi buffer 10212</div>`)[0];
+                popup_e0b6a0e0ff1525e5924190bfb30fe673.setContent(html_fab92b25a61225fcb67fcb46b6f5b8d5);
+            
+        
+
+        circle_marker_bc2bd33767b292a5f312e44374941b7c.bindPopup(popup_e0b6a0e0ff1525e5924190bfb30fe673)
+        ;
+
+        
+    
+    
+            var circle_marker_e6496144a8eee98f09745ddd504555d9 = L.circleMarker(
+                [-3.7988598435622585, 102.27260351516678],
+                {"bubblingMouseEvents": true, "color": "#2878b5", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2878b5", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_155602b9c5d8abaf9fb044ec782caf5f);
+        
+    
+        var popup_d88594a11558486d8124c73707e12440 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f785224e64bdd996988719306ede2a69 = $(`<div id="html_f785224e64bdd996988719306ede2a69" style="width: 100.0%; height: 100.0%;">K029 | Peringkat 20 | Skor 0.565 | Populasi buffer 10473</div>`)[0];
+                popup_d88594a11558486d8124c73707e12440.setContent(html_f785224e64bdd996988719306ede2a69);
+            
+        
+
+        circle_marker_e6496144a8eee98f09745ddd504555d9.bindPopup(popup_d88594a11558486d8124c73707e12440)
+        ;
+
+        
+    
+    
+            var circle_marker_79918ea2800ba6fd62fa8e8506124921 = L.circleMarker(
+                [-3.7971817866369575, 102.25641572418758],
+                {"bubblingMouseEvents": true, "color": "#2878b5", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2878b5", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_155602b9c5d8abaf9fb044ec782caf5f);
+        
+    
+        var popup_123f2397bb5480482172e515c0c63428 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_165b8262f3f8d753e1366b89c57cd265 = $(`<div id="html_165b8262f3f8d753e1366b89c57cd265" style="width: 100.0%; height: 100.0%;">K030 | Peringkat 7 | Skor 0.662 | Populasi buffer 7926</div>`)[0];
+                popup_123f2397bb5480482172e515c0c63428.setContent(html_165b8262f3f8d753e1366b89c57cd265);
+            
+        
+
+        circle_marker_79918ea2800ba6fd62fa8e8506124921.bindPopup(popup_123f2397bb5480482172e515c0c63428)
+        ;
+
+        
+    
+    
+            var circle_marker_769ce71791e061fc255b2c802ff1ec1d = L.circleMarker(
+                [-3.7972024107594136, 102.2628928579816],
+                {"bubblingMouseEvents": true, "color": "#2878b5", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2878b5", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_155602b9c5d8abaf9fb044ec782caf5f);
+        
+    
+        var popup_91f1fdd71bb042baed9a5f9b8b1c922e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1e58ce46129b1ec02b51930627c1aab5 = $(`<div id="html_1e58ce46129b1ec02b51930627c1aab5" style="width: 100.0%; height: 100.0%;">K031 | Peringkat 13 | Skor 0.611 | Populasi buffer 10559</div>`)[0];
+                popup_91f1fdd71bb042baed9a5f9b8b1c922e.setContent(html_1e58ce46129b1ec02b51930627c1aab5);
+            
+        
+
+        circle_marker_769ce71791e061fc255b2c802ff1ec1d.bindPopup(popup_91f1fdd71bb042baed9a5f9b8b1c922e)
+        ;
+
+        
+    
+    
+            var circle_marker_8bd09a1dfca3daa7dea6bf0ef8744381 = L.circleMarker(
+                [-3.7972229862819087, 102.26937002716976],
+                {"bubblingMouseEvents": true, "color": "#16803c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#16803c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_155602b9c5d8abaf9fb044ec782caf5f);
+        
+    
+        var popup_510ab2e3c39c4348277481ce865f7451 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f4292ba02012b798366e7f13ae58800e = $(`<div id="html_f4292ba02012b798366e7f13ae58800e" style="width: 100.0%; height: 100.0%;">K032 | Peringkat 3 | Skor 0.678 | Populasi buffer 10340</div>`)[0];
+                popup_510ab2e3c39c4348277481ce865f7451.setContent(html_f4292ba02012b798366e7f13ae58800e);
+            
+        
+
+        circle_marker_8bd09a1dfca3daa7dea6bf0ef8744381.bindPopup(popup_510ab2e3c39c4348277481ce865f7451)
+        ;
+
+        
+    
+    
+            var circle_6c98a4cbd34df5e09e8599f290d81a72 = L.circle(
+                [-3.7972229862819087, 102.26937002716976],
+                {"bubblingMouseEvents": true, "color": "#16803c", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#16803c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 500, "stroke": true, "weight": 1}
+            ).addTo(map_155602b9c5d8abaf9fb044ec782caf5f);
+        
+    
+            var circle_marker_5e8a2ee26b428eaed68db5eb62991a42 = L.circleMarker(
+                [-3.797243513203124, 102.27584723166858],
+                {"bubblingMouseEvents": true, "color": "#2878b5", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2878b5", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_155602b9c5d8abaf9fb044ec782caf5f);
+        
+    
+        var popup_c4fb396cf4cf4b05d6d33c4e925b30ad = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4eeb2f8c3f4ea4eed3a63cc204b225f9 = $(`<div id="html_4eeb2f8c3f4ea4eed3a63cc204b225f9" style="width: 100.0%; height: 100.0%;">K033 | Peringkat 37 | Skor 0.319 | Populasi buffer 8018</div>`)[0];
+                popup_c4fb396cf4cf4b05d6d33c4e925b30ad.setContent(html_4eeb2f8c3f4ea4eed3a63cc204b225f9);
+            
+        
+
+        circle_marker_5e8a2ee26b428eaed68db5eb62991a42.bindPopup(popup_c4fb396cf4cf4b05d6d33c4e925b30ad)
+        ;
+
+        
+    
+    
+            var circle_marker_f011321dafb316cdeacca4ad763c85d2 = L.circleMarker(
+                [-3.7955655346375883, 102.25965941848055],
+                {"bubblingMouseEvents": true, "color": "#2878b5", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2878b5", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_155602b9c5d8abaf9fb044ec782caf5f);
+        
+    
+        var popup_9cfe0ac56cc1c5647b416cd5d2eb8edb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c1a5e497fde82205ca06e32eb3efb0c1 = $(`<div id="html_c1a5e497fde82205ca06e32eb3efb0c1" style="width: 100.0%; height: 100.0%;">K034 | Peringkat 31 | Skor 0.431 | Populasi buffer 8105</div>`)[0];
+                popup_9cfe0ac56cc1c5647b416cd5d2eb8edb.setContent(html_c1a5e497fde82205ca06e32eb3efb0c1);
+            
+        
+
+        circle_marker_f011321dafb316cdeacca4ad763c85d2.bindPopup(popup_9cfe0ac56cc1c5647b416cd5d2eb8edb)
+        ;
+
+        
+    
+    
+            var circle_marker_a8baeeecaf6dad70a4a52ce04c4bce3c = L.circleMarker(
+                [-3.7955861256112207, 102.26613655788925],
+                {"bubblingMouseEvents": true, "color": "#2878b5", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2878b5", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_155602b9c5d8abaf9fb044ec782caf5f);
+        
+    
+        var popup_ad2a28ed4092acc67450bcc3d7bceb03 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_054b1e29335a44ee47fd74c2cdfee2eb = $(`<div id="html_054b1e29335a44ee47fd74c2cdfee2eb" style="width: 100.0%; height: 100.0%;">K035 | Peringkat 23 | Skor 0.515 | Populasi buffer 8371</div>`)[0];
+                popup_ad2a28ed4092acc67450bcc3d7bceb03.setContent(html_054b1e29335a44ee47fd74c2cdfee2eb);
+            
+        
+
+        circle_marker_a8baeeecaf6dad70a4a52ce04c4bce3c.bindPopup(popup_ad2a28ed4092acc67450bcc3d7bceb03)
+        ;
+
+        
+    
+    
+            var circle_marker_1ed8b4b0ee6064261badb4c24f86c2fd = L.circleMarker(
+                [-3.7956066680051075, 102.27261373265002],
+                {"bubblingMouseEvents": true, "color": "#2878b5", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2878b5", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_155602b9c5d8abaf9fb044ec782caf5f);
+        
+    
+        var popup_96c326bda616ba8a22c3cac6593d2f0b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_86e309d86d130e92cfcd5839b135edc0 = $(`<div id="html_86e309d86d130e92cfcd5839b135edc0" style="width: 100.0%; height: 100.0%;">K036 | Peringkat 27 | Skor 0.475 | Populasi buffer 9132</div>`)[0];
+                popup_96c326bda616ba8a22c3cac6593d2f0b.setContent(html_86e309d86d130e92cfcd5839b135edc0);
+            
+        
+
+        circle_marker_1ed8b4b0ee6064261badb4c24f86c2fd.bindPopup(popup_96c326bda616ba8a22c3cac6593d2f0b)
+        ;
+
+        
+    
+    
+            var circle_marker_6d4d2831ea7ee48aaef5af0efa376c6d = L.circleMarker(
+                [-3.793928655162404, 102.25642599771373],
+                {"bubblingMouseEvents": true, "color": "#2878b5", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2878b5", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_155602b9c5d8abaf9fb044ec782caf5f);
+        
+    
+        var popup_e962f95787506cee34a2051ceb30009e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0097159456b338f7f8c2e21d07f51800 = $(`<div id="html_0097159456b338f7f8c2e21d07f51800" style="width: 100.0%; height: 100.0%;">K037 | Peringkat 36 | Skor 0.329 | Populasi buffer 5410</div>`)[0];
+                popup_e962f95787506cee34a2051ceb30009e.setContent(html_0097159456b338f7f8c2e21d07f51800);
+            
+        
+
+        circle_marker_6d4d2831ea7ee48aaef5af0efa376c6d.bindPopup(popup_e962f95787506cee34a2051ceb30009e)
+        ;
+
+        
+    
+    
+            var circle_marker_2e10f9c425a16fab5b4ee0954de91b9f = L.circleMarker(
+                [-3.7939492615660013, 102.26290310732765],
+                {"bubblingMouseEvents": true, "color": "#2878b5", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2878b5", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_155602b9c5d8abaf9fb044ec782caf5f);
+        
+    
+        var popup_37c4c24c4262dd9553b6769add24208b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d6bc349ac495559642d228ddf2a84d82 = $(`<div id="html_d6bc349ac495559642d228ddf2a84d82" style="width: 100.0%; height: 100.0%;">K038 | Peringkat 39 | Skor 0.195 | Populasi buffer 6167</div>`)[0];
+                popup_37c4c24c4262dd9553b6769add24208b.setContent(html_d6bc349ac495559642d228ddf2a84d82);
+            
+        
+
+        circle_marker_2e10f9c425a16fab5b4ee0954de91b9f.bindPopup(popup_37c4c24c4262dd9553b6769add24208b)
+        ;
+
+        
+    
+    
+            var circle_marker_b4809c761a7d98f98f659183f4595383 = L.circleMarker(
+                [-3.793969819411388, 102.26938025233504],
+                {"bubblingMouseEvents": true, "color": "#2878b5", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2878b5", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_155602b9c5d8abaf9fb044ec782caf5f);
+        
+    
+        var popup_2543fcb0bdf3dfb0f8c3686b9af58e2d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c325f304f653fd655def38a0c6e5af1d = $(`<div id="html_c325f304f653fd655def38a0c6e5af1d" style="width: 100.0%; height: 100.0%;">K039 | Peringkat 32 | Skor 0.381 | Populasi buffer 7134</div>`)[0];
+                popup_2543fcb0bdf3dfb0f8c3686b9af58e2d.setContent(html_c325f304f653fd655def38a0c6e5af1d);
+            
+        
+
+        circle_marker_b4809c761a7d98f98f659183f4595383.bindPopup(popup_2543fcb0bdf3dfb0f8c3686b9af58e2d)
+        ;
+
+        
+    
+    
+            var circle_marker_a40c1b968a81d003e1bad7d7377c72d0 = L.circleMarker(
+                [-3.7939903286972507, 102.27585743265243],
+                {"bubblingMouseEvents": true, "color": "#2878b5", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2878b5", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_155602b9c5d8abaf9fb044ec782caf5f);
+        
+    
+        var popup_73716b938707b40799a2b6302ab463c3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_849a04ddd48524e575e5272463e566a5 = $(`<div id="html_849a04ddd48524e575e5272463e566a5" style="width: 100.0%; height: 100.0%;">K040 | Peringkat 40 | Skor 0.132 | Populasi buffer 5396</div>`)[0];
+                popup_73716b938707b40799a2b6302ab463c3.setContent(html_849a04ddd48524e575e5272463e566a5);
+            
+        
+
+        circle_marker_a40c1b968a81d003e1bad7d7377c72d0.bindPopup(popup_73716b938707b40799a2b6302ab463c3)
+        ;
+
+        
+    
+    
+            var layer_control_0c042828ab2d9ea454ee0194773a2b8a_layers = {
+                base_layers : {
+                },
+                overlays :  {
+                    "Wilayah studi" : geo_json_630aff1692a6d77df4d010dc9f796f6c,
+                    "Jaringan jalan" : geo_json_3ef3dbedf6482a5eb0a8ce5832b77dc4,
+                },
+            };
+            let layer_control_0c042828ab2d9ea454ee0194773a2b8a = L.control.layers(
+                layer_control_0c042828ab2d9ea454ee0194773a2b8a_layers.base_layers,
+                layer_control_0c042828ab2d9ea454ee0194773a2b8a_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_155602b9c5d8abaf9fb044ec782caf5f);
+
+        
+</script>
+</html>

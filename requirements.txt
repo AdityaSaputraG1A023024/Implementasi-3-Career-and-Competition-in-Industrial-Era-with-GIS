@@ -1,0 +1,9 @@
+﻿numpy>=1.26
+pandas>=2.0
+geopandas>=1.0
+shapely>=2.0
+matplotlib>=3.8
+osmnx>=2.0
+networkx>=3.2
+folium>=0.16
+PyYAML>=6.0
