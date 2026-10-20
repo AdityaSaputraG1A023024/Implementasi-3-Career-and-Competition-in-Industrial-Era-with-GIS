@@ -2,7 +2,7 @@
 
 Repositori **`analisis-lokasi-fasilitas-gis`** adalah studi kasus GIS yang membandingkan kandidat lokasi fasilitas menggunakan populasi, akses jaringan jalan, dan jarak terhadap pesaing. Analisis dirancang agar dapat dicoba pada laptop dengan perangkat lunak sumber terbuka.
 
-> **Catatan data:** Hasil dan peta dalam repositori ini dibuat dari fixture lokal di `data/sample/` dan populasi sintetis. Keduanya hanya untuk demonstrasi; bukan data lapangan, data populasi resmi, atau rekomendasi bisnis. Program menyediakan opsi pengambilan jalan dan POI dari OpenStreetMap dengan `--source osm`, tetapi akses OSM gagal pada lingkungan pengujian ini; karena itu, hasil yang disertakan bukan hasil analisis OSM. Untuk memakai data OSM, jalankan ulang program dengan koneksi internet yang dapat menjangkau layanan OSM.
+> **Catatan data:** Hasil dan peta dalam repositori ini dibuat dari fixture lokal di `data/sample/` dan populasi sintetis. Keduanya hanya untuk demonstrasi; bukan data lapangan, data populasi resmi, atau rekomendasi bisnis. Program menyediakan opsi pengambilan jalan dan POI dari OpenStreetMap dengan `--source osm`. Untuk memakai data OSM, jalankan ulang program dengan koneksi internet yang dapat menjangkau layanan OSM.
 
 ## Latar belakang
 
@@ -146,20 +146,3 @@ outputs/{hasil.gpkg,peringkat_kandidat.csv,analisis_sensitivitas.csv,
 - `src/visualize.py`: ekspor peta statis Matplotlib dan peta interaktif Folium.
 - `src/main.py`: CLI dan penulisan GeoPackage/CSV.
 - `tests/test_analysis.py`: uji CRS, geometri, bobot, skor, jaringan, dan fallback offline.
-
-## Mengunggah ke GitHub
-
-Buat repositori publik atau privat bernama `analisis-lokasi-fasilitas-gis`, lalu dari folder proyek:
-
-```powershell
-git init
-git add README.md requirements.txt .gitignore config.yaml data src tests outputs
-git commit -m "Tambahkan analisis GIS lokasi fasilitas"
-git branch -M main
-git remote add origin https://github.com/USERNAME/analisis-lokasi-fasilitas-gis.git
-git push -u origin main
-```
-
-Ganti `USERNAME` dengan akun GitHub. Jika remote `origin` sudah disetel, gunakan `git remote set-url origin ...`.
-
-
