@@ -1,12 +1,12 @@
-﻿# Analisis Spasial Penentuan Lokasi Fasilitas
+# Analisis Spasial Penentuan Lokasi Fasilitas
 
 Repositori **`analisis-lokasi-fasilitas-gis`** adalah studi kasus GIS yang membandingkan kandidat lokasi fasilitas menggunakan populasi, akses jaringan jalan, dan jarak terhadap pesaing. Analisis dirancang agar dapat dicoba pada laptop dengan perangkat lunak sumber terbuka.
 
-> **Penting:** angka dan peta yang disertakan adalah hasil ilustrasi dari fixture lokal dan populasi sintetis, bukan rekomendasi bisnis. Pengambilan data OpenStreetMap (OSM) tersedia, tetapi pada saat implementasi layanan OSM tidak dapat diakses dari lingkungan eksekusi. Jangan menganggap fixture sebagai data lapangan.
+> **Catatan data:** Hasil dan peta dalam repositori ini dibuat dari fixture lokal di `data/sample/` dan populasi sintetis. Keduanya hanya untuk demonstrasi; bukan data lapangan, data populasi resmi, atau rekomendasi bisnis. Program menyediakan opsi pengambilan jalan dan POI dari OpenStreetMap dengan `--source osm`, tetapi akses OSM gagal pada lingkungan pengujian ini; karena itu, hasil yang disertakan bukan hasil analisis OSM. Untuk memakai data OSM, jalankan ulang program dengan koneksi internet yang dapat menjangkau layanan OSM.
 
 ## Latar belakang
 
-Materi kuliah praktisi **â€œCareer and Competition in Industrial Era with GISâ€** oleh Widi Primadepa (GIS analyst, alumni Informatika Universitas Bengkulu) membahas peluang lulusan Informatika menjadi pengembang GIS, penerapan GIS lintas sektorâ€”termasuk lokasi gerai ritel dan efisiensi logistikâ€”serta alternatif sumber terbuka seperti QGIS, PostGIS, dan GeoPandas. Materi juga menyoroti data antarinstansi yang tersekat, pentingnya memahami alur kerja/kebutuhan, dan AI sebagai pembantu yang dibatasi pemahaman pengguna.
+Materi kuliah praktisi **“Career and Competition in Industrial Era with GIS”** oleh Widi Primadepa (GIS analyst, alumni Informatika Universitas Bengkulu) membahas peluang lulusan Informatika menjadi pengembang GIS, penerapan GIS lintas sektor—termasuk lokasi gerai ritel dan efisiensi logistik—serta alternatif sumber terbuka seperti QGIS, PostGIS, dan GeoPandas. Materi juga menyoroti data antarinstansi yang tersekat, pentingnya memahami alur kerja/kebutuhan, dan AI sebagai pembantu yang dibatasi pemahaman pengguna.
 
 Implementasi ini adalah **usulan studi kasus**, bukan klaim bahwa materi memberikan model skor atau angka hasil tertentu. Proyek memperlihatkan alur kerja data spasial terbuka yang bisa dipahami, diperiksa, dan dijalankan ulang.
 
@@ -47,7 +47,7 @@ config.yaml + (OSM / fixture lokal)
 2. Untuk setiap radius di `service_radii_m` (default 500 m dan 1.000 m), populasi dalam buffer lurus dihitung.
 3. Graf jalan tak berarah dibuat dari garis jalan yang diproyeksikan dan dinodakan pada perpotongan. NetworkX Dijkstra menghitung populasi grid yang dapat dicapai dengan jarak jaringan dalam radius. Jarak connector titik ke simpul jalan terdekat ikut diperhitungkan. Ini analisis jarak, bukan waktu tempuh.
 4. Untuk setiap kandidat dihitung jarak ke pesaing terdekat dan jumlah pesaing dalam setiap radius.
-5. Nilai populasi buffer, populasi jaringan, dan jarak pesaing dinormalisasi dengan min-max ke 0â€“1. Jika satu kriteria konstan, nilainya netral 0,5. Skor adalah jumlah nilai normalisasi dikali bobot. Bobot harus nonnegatif dan berjumlah 1.
+5. Nilai populasi buffer, populasi jaringan, dan jarak pesaing dinormalisasi dengan min-max ke 0–1. Jika satu kriteria konstan, nilainya netral 0,5. Skor adalah jumlah nilai normalisasi dikali bobot. Bobot harus nonnegatif dan berjumlah 1.
 6. Sensitivitas membandingkan top 5 pada tiap radius dengan tiga skenario bobot alternatif. CSV menyertakan ranking kandidat, overlap top 5, dan apakah urutannya sama dengan baseline.
 
 Bobot awal: populasi 0,45; aksesibilitas jaringan 0,35; jarak pesaing 0,20. Pilihan metrik dan bobot ini merupakan **keputusan implementasi untuk demonstrasi**, bukan bobot yang ditentukan materi kuliah.
@@ -78,7 +78,7 @@ Di lingkungan pengembangan ini, pipeline sample selesai sekitar **5,1 detik**; w
 
 Hasil berikut berasal dari menjalankan `python -m src.main --source sample` pada konfigurasi bawaan. Ada **40 kandidat** dan **108 sel populasi sintetis**, memakai EPSG:32748. Populasi buffer dan jaringan adalah hitungan ilustratif, bukan jumlah penduduk resmi. Kolom jarak pesaing dibulatkan ke meter.
 
-| Peringkat | Kandidat | Skor 0â€“1 | Populasi buffer 500 m | Populasi jaringan 500 m | Pesaing terdekat (m) |
+| Peringkat | Kandidat | Skor 0–1 | Populasi buffer 500 m | Populasi jaringan 500 m | Pesaing terdekat (m) |
 |---:|---|---:|---:|---:|---:|
 | 1 | K023 | 0,758810 | 10.762 | 4.042 | 516 |
 | 2 | K027 | 0,681091 | 11.361 | 2.702 | 535 |
@@ -92,7 +92,7 @@ Hasil berikut berasal dari menjalankan `python -m src.main --source sample` pada
 
 ## Analisis sensitivitas aktual
 
-Pada bobot dasar, kandidat top 5 radius 500 m adalah **K023, K027, K032, K025, K018**. Pada radius 1.000 m, top 5 menjadi **K020, K024, K017, K021, K013**â€”tidak ada kandidat yang sama pada kedua daftar top 5 tersebut.
+Pada bobot dasar, kandidat top 5 radius 500 m adalah **K023, K027, K032, K025, K018**. Pada radius 1.000 m, top 5 menjadi **K020, K024, K017, K021, K013**—tidak ada kandidat yang sama pada kedua daftar top 5 tersebut.
 
 | Radius | Skenario bobot | Kandidat yang tetap di top 5 (dari 5) | Urutan sama dengan baseline? |
 |---:|---|---:|---|
